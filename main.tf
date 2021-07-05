@@ -1,7 +1,7 @@
 provider "aws" {
     region     = "us-east-1"
-    access_key = "AKIATZVQDRDB4GK35E3E"
-    secret_key = "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"
+    access_key = "aws_access_key_here"
+    secret_key = "aws_secret_key_here"
 }
 
 variable "myregion" {
@@ -9,7 +9,7 @@ variable "myregion" {
 }
 
 variable "accountId" {
-    default = "261288593603"
+    default = "aws_account_id"
 }
 
 resource "aws_dynamodb_table" "ddbtable" {
